@@ -1,9 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  body {
-    @apply bg-maori-dark text-white;
-  }
+@theme {
+  --color-syphon-blue: #00A6FB;
+  --color-syphon-green: #06D6A0;
+  --color-syphon-gold: #FFD60A;
+  --color-maori-dark: #0B0C10;
+  --color-maori-gray: #1F2833;
+}
+
+body {
+  background-color: var(--color-maori-dark);
+  color: white;
 }
