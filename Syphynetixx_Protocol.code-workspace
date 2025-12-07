@@ -1,0 +1,62 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": false,
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/artifacts": true,
+      "**/cache": true
+    },
+    "editor.semanticHighlighting.enabled": true,
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#1a1a2e",
+      "activityBar.foreground": "#00d4ff",
+      "statusBar.background": "#16213e",
+      "statusBar.foreground": "#00d4ff",
+      "titleBar.activeBackground": "#0f3460",
+      "titleBar.activeForeground": "#e94560"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "github.copilot",
+      "github.copilot-chat",
+      "nomicfoundation.hardhat-solidity",
+      "juanblanco.solidity"
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Workspace: Run Tests",
+        "skipFiles": ["<node_internals>/**"],
+        "program": "${workspaceFolder}/node_modules/.bin/hardhat",
+        "args": ["test"],
+        "console": "integratedTerminal"
+      }
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Workspace: Compile",
+        "type": "shell",
+        "command": "npx hardhat compile",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+}
