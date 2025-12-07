@@ -1,0 +1,25 @@
+{
+  "recommendations": [
+    "github.copilot",
+    "github.copilot-chat",
+    "github.vscode-pull-request-github",
+    "nomicfoundation.hardhat-solidity",
+    "juanblanco.solidity",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "redhat.vscode-yaml",
+    "ms-vscode.vscode-typescript-next",
+    "christian-kohler.path-intellisense",
+    "eamodio.gitlens",
+    "streetsidesoftware.code-spell-checker",
+    "visualstudioexptteam.vscodeintellicode",
+    "ms-azuretools.vscode-docker",
+    "rust-lang.rust-analyzer",
+    "tamasfe.even-better-toml",
+    "serayuzgur.crates",
+    "usernamehw.errorlens",
+    "yzhang.markdown-all-in-one",
+    "bierner.markdown-mermaid"
+  ],
+  "unwantedRecommendations": []
+}

@@ -1,0 +1,96 @@
+{
+  "Hardhat Test Template": {
+    "prefix": "htest",
+    "body": [
+      "const { expect } = require('chai');",
+      "const { ethers } = require('hardhat');",
+      "",
+      "describe('${1:ContractName}', function () {",
+      "  let ${2:contractInstance};",
+      "  let owner;",
+      "  let addr1;",
+      "  let addr2;",
+      "",
+      "  beforeEach(async function () {",
+      "    [owner, addr1, addr2] = await ethers.getSigners();",
+      "    const ${1:ContractName} = await ethers.getContractFactory('${1:ContractName}');",
+      "    ${2:contractInstance} = await ${1:ContractName}.deploy();",
+      "    await ${2:contractInstance}.waitForDeployment();",
+      "  });",
+      "",
+      "  describe('${3:Functionality}', function () {",
+      "    it('${4:should do something}', async function () {",
+      "      $0",
+      "    });",
+      "  });",
+      "});"
+    ],
+    "description": "Hardhat test template (Ethers.js v6)"
+  },
+  "Test Case": {
+    "prefix": "it",
+    "body": ["it('${1:should do something}', async function () {", "  $0", "});"],
+    "description": "Test case"
+  },
+  "Describe Block": {
+    "prefix": "describe",
+    "body": ["describe('${1:functionality}', function () {", "  $0", "});"],
+    "description": "Describe test block"
+  },
+  "BeforeEach Hook": {
+    "prefix": "beforeEach",
+    "body": ["beforeEach(async function () {", "  $0", "});"],
+    "description": "BeforeEach hook"
+  },
+  "Expect Statement": {
+    "prefix": "expect",
+    "body": ["expect(${1:actual}).to.${2:equal}(${3:expected});"],
+    "description": "Chai expect statement"
+  },
+  "Deploy Contract": {
+    "prefix": "deploy",
+    "body": [
+      "const ${1:ContractName} = await ethers.getContractFactory('${1:ContractName}');",
+      "const ${2:instance} = await ${1:ContractName}.deploy(${3:args});",
+      "await ${2:instance}.waitForDeployment();"
+    ],
+    "description": "Deploy a contract (Ethers.js v6)"
+  },
+  "Get Signers": {
+    "prefix": "signers",
+    "body": ["const [owner, addr1, addr2] = await ethers.getSigners();"],
+    "description": "Get ethers signers"
+  },
+  "Expect Revert": {
+    "prefix": "expectRevert",
+    "body": ["await expect(${1:transaction}).to.be.revertedWith('${2:reason}');"],
+    "description": "Expect transaction to revert"
+  },
+  "Expect Event": {
+    "prefix": "expectEvent",
+    "body": ["await expect(${1:transaction}).to.emit(${2:contract}, '${3:EventName}').withArgs(${4:args});"],
+    "description": "Expect event to be emitted"
+  },
+  "Deployment Script": {
+    "prefix": "deployScript",
+    "body": [
+      "const hre = require('hardhat');",
+      "",
+      "async function main() {",
+      "  const ${1:ContractName} = await hre.ethers.getContractFactory('${1:ContractName}');",
+      "  const ${2:instance} = await ${1:ContractName}.deploy(${3:args});",
+      "  await ${2:instance}.waitForDeployment();",
+      "",
+      "  console.log('${1:ContractName} deployed to:', await ${2:instance}.getAddress());",
+      "}",
+      "",
+      "main()",
+      "  .then(() => process.exit(0))",
+      "  .catch((error) => {",
+      "    console.error(error);",
+      "    process.exit(1);",
+      "  });"
+    ],
+    "description": "Deployment script template (Ethers.js v6)"
+  }
+}
