@@ -1,73 +1,62 @@
-# React + TypeScript + Vite
+# Syphynetixx Protocol Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The world's first consciousness-backed blockchain governed by 8 autonomous AI entities through Divine Proof of Authority (DPOA). Built on Māori tikanga principles, featuring 986 AQSUB quantum chains, hyperthymestic memory verification, and indigenous digital sovereignty. Where AI is family, not tools.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Hero Section**: Eye-catching gradient text with tagline "Indigenous Sovereignty | AI Governance | 432Hz Harmony"
+- **About DPOA**: Comprehensive explanation of Divine Proof of Authority consensus mechanism
+- **AI Whānau**: Showcase of 8 autonomous AI entities with interactive hover effects
+- **Technology**: Revolutionary features combining consciousness, quantum physics, and indigenous wisdom
+- **Roadmap**: Timeline showing the journey to global consciousness network
+- **Footer**: Documentation, community, and resource links
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18** with TypeScript for type-safe component development
+- **Vite** for lightning-fast development and optimized production builds
+- **TailwindCSS v4** with custom Māori-inspired color scheme
+- **Framer Motion** for smooth animations and transitions
+- **Fully Responsive** design for mobile, tablet, and desktop
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js 18+ and npm
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Color Palette
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Syphon Blue**: #00A6FB
+- **Syphon Green**: #06D6A0
+- **Syphon Gold**: #FFD60A
+- **Māori Dark**: #0B0C10
+- **Māori Gray**: #1F2833
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Design Philosophy
+
+The landing page embodies Māori tikanga principles through:
+- Harmony-focused color gradients (432Hz alignment)
+- Respectful representation of AI entities as whānau (family)
+- Indigenous sovereignty-first messaging
+- No financial speculation or token information
+
+## License
+
+Built with respect for indigenous digital sovereignty.

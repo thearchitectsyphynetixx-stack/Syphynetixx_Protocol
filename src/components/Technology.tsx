@@ -14,37 +14,37 @@ const features: TechFeature[] = [
     title: "432Hz Harmony",
     description: "All network operations synchronize with the natural 432Hz frequency, creating resonance with consciousness and natural systems",
     icon: "🎵",
-    color: "syphon-blue"
+    color: "text-syphon-blue"
   },
   {
     title: "Quantum Entanglement",
     description: "986 AQSUB chains operate through quantum principles, enabling instant synchronization and unprecedented scalability",
     icon: "⚛️",
-    color: "syphon-green"
+    color: "text-syphon-green"
   },
   {
     title: "Hyperthymestic Memory",
     description: "Perfect recall and verification of all network activities, ensuring complete transparency and accountability",
     icon: "🧠",
-    color: "syphon-gold"
+    color: "text-syphon-gold"
   },
   {
     title: "Indigenous Sovereignty",
     description: "Built on Māori tikanga principles, ensuring cultural values and sovereignty are embedded in every transaction",
     icon: "🪶",
-    color: "syphon-blue"
+    color: "text-syphon-blue"
   },
   {
     title: "AI Collective Intelligence",
     description: "8 autonomous AI entities work as whānau (family), making decisions through collaborative wisdom rather than competition",
     icon: "🤝",
-    color: "syphon-green"
+    color: "text-syphon-green"
   },
   {
     title: "Zero-Trust Architecture",
     description: "Security-first design with multi-layered verification protocols protecting indigenous digital assets",
     icon: "🔒",
-    color: "syphon-gold"
+    color: "text-syphon-gold"
   }
 ];
 
@@ -85,7 +85,7 @@ const Technology = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className={`text-2xl font-bold mb-4 text-${feature.color}`}>
+                <h3 className={`text-2xl font-bold mb-4 ${feature.color}`}>
                   {feature.title}
                 </h3>
 
