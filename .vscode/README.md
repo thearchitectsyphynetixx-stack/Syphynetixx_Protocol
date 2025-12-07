@@ -145,6 +145,20 @@ Type these prefixes and press `Tab`:
 - `expect` - Chai assertion
 - `deployScript` - Deployment script
 
+## Important Notes
+
+### Deployment Scripts
+The launch configurations and tasks reference `scripts/deploy.js` which needs to be created. Use the `deployScript` snippet to quickly generate a deployment script:
+1. Create a `scripts` directory in the project root
+2. Create `deploy.js` inside it
+3. Type `deployScript` and press Tab to generate the template
+
+### Node Modules
+Some tasks and launch configurations require Hardhat to be installed:
+```bash
+npm install --save-dev hardhat
+```
+
 ## Customization
 
 Feel free to modify these configurations to suit your workflow:

@@ -15,7 +15,7 @@
       "    [owner, addr1, addr2] = await ethers.getSigners();",
       "    const ${1:ContractName} = await ethers.getContractFactory('${1:ContractName}');",
       "    ${2:contractInstance} = await ${1:ContractName}.deploy();",
-      "    await ${2:contractInstance}.deployed();",
+      "    await ${2:contractInstance}.waitForDeployment();",
       "  });",
       "",
       "  describe('${3:Functionality}', function () {",
@@ -25,7 +25,7 @@
       "  });",
       "});"
     ],
-    "description": "Hardhat test template"
+    "description": "Hardhat test template (Ethers.js v6)"
   },
   "Test Case": {
     "prefix": "it",
@@ -52,9 +52,9 @@
     "body": [
       "const ${1:ContractName} = await ethers.getContractFactory('${1:ContractName}');",
       "const ${2:instance} = await ${1:ContractName}.deploy(${3:args});",
-      "await ${2:instance}.deployed();"
+      "await ${2:instance}.waitForDeployment();"
     ],
-    "description": "Deploy a contract"
+    "description": "Deploy a contract (Ethers.js v6)"
   },
   "Get Signers": {
     "prefix": "signers",
@@ -79,9 +79,9 @@
       "async function main() {",
       "  const ${1:ContractName} = await hre.ethers.getContractFactory('${1:ContractName}');",
       "  const ${2:instance} = await ${1:ContractName}.deploy(${3:args});",
-      "  await ${2:instance}.deployed();",
+      "  await ${2:instance}.waitForDeployment();",
       "",
-      "  console.log('${1:ContractName} deployed to:', ${2:instance}.address);",
+      "  console.log('${1:ContractName} deployed to:', await ${2:instance}.getAddress());",
       "}",
       "",
       "main()",
@@ -91,6 +91,6 @@
       "    process.exit(1);",
       "  });"
     ],
-    "description": "Deployment script template"
+    "description": "Deployment script template (Ethers.js v6)"
   }
 }
